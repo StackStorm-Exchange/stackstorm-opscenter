@@ -1,11 +1,11 @@
 ---
 ref: opscenter
 name : opscenter
-description : st2 content pack containing datastax opscenter integrations
+description : datastax opscenter
 keywords:
   - datastax
   - cassandra
   - opscenter
-version: 0.2.1
+version: 0.2.2
 author : StackStorm, Inc.
 email : info@stackstorm.com

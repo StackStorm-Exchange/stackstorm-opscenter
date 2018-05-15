@@ -12,7 +12,7 @@ class SetNodeConfAction(OpscenterAction):
 
         try:
             yaml.safe_load(node_conf)  # If this throws, fail the action.
-        except:
+        except Exception:
             self.logger.error('Configuration is not valid YAML.')
             raise
         url = self._get_full_url([cluster_id, 'nodeconf', node_ip])
