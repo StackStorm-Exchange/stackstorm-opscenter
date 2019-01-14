@@ -71,7 +71,7 @@ class EventsConsumerSensor(PollingSensor):
 
     def _get_last_timestamp(self):
         if not self._last_timestamp and hasattr(self._sensor_service, 'get_value'):
-            self._last_timestamp = long(self._sensor_service.get_value(name='last_timestamp'))
+            self._last_timestamp = int(self._sensor_service.get_value(name='last_timestamp'))
 
         return self._last_timestamp
 
