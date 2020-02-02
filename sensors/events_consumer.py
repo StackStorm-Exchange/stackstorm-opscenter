@@ -1,6 +1,6 @@
 # pylint: disable=super-on-old-class
 from operator import itemgetter
-from urlparse import urljoin
+from six.moves.urllib.parse import urljoin
 
 import requests
 
