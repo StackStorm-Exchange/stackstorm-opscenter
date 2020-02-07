@@ -1,6 +1,6 @@
 from functools import reduce
 
-from urlparse import urljoin
+from six.moves.urllib.parse import urljoin
 
 from st2common.runners.base_action import Action
 
